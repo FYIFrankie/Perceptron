@@ -57,10 +57,10 @@ def main():
     correct = 0
     for data_point in test_data:
         total += 1
-        a = calculate_activation(weights, data_point, bias)
-        b = data_point[class_name]
-        print(a)
-        if b*a > 0:
+        activation = calculate_activation(weights, data_point, bias)
+        label = data_point[class_name]
+        print(activation)
+        if activation*label > 0:
             correct += 1
     print("Percentage correct: " + str((correct/total)*100) + "%")
 
