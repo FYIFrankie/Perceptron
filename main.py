@@ -1,9 +1,6 @@
 from data_import import data_reader
 from calculate import calculate_activation
 import sys
-import random
-
-
 
 
 def main():
@@ -26,7 +23,6 @@ def main():
     headers = list(training_data[0].keys())
     headers.remove(class_name)
     bias = 0
-
 
     for header in headers:
         weights[header] = 0
