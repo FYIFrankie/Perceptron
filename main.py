@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from data_import import data_reader
 from calculate import calculate_activation
 import sys
